@@ -1,0 +1,121 @@
+app: Kodi
+union: true
+
+ingredients:
+  packages:
+    - kodi
+    - libcurl3
+    - samba-libs
+    - samba
+    - libpcrecpp0v5 	 		
+#   - kodi-audiodecoder-2sf 	 	
+    - kodi-audiodecoder-asap 	 	 	
+    - kodi-audiodecoder-dumb 	 	 	
+    - kodi-audiodecoder-fluidsynth 	 	 	
+    - kodi-audiodecoder-gme 	 	 	
+    - kodi-audiodecoder-gsf 	 	 	
+    - kodi-audiodecoder-modplug 	 	 	
+    - kodi-audiodecoder-ncsf 	 	 	
+    - kodi-audiodecoder-nosefart 	 	 	
+    - kodi-audiodecoder-openmpt  	 	 	
+    - kodi-audiodecoder-organya  	 	 	
+    - kodi-audiodecoder-qsf  	 	 	
+    - kodi-audiodecoder-sidplay  	 	 	
+    - kodi-audiodecoder-snesapu 	 	 	
+    - kodi-audiodecoder-ssf 	 	 	
+    - kodi-audiodecoder-stsound 	 	 	
+    - kodi-audiodecoder-timidity  	 	 	
+    - kodi-audiodecoder-upse 	 	 	
+    - kodi-audiodecoder-vgmstream 	 	 	
+    - kodi-audiodecoder-wsr 	 	 	
+    - kodi-audiodsp-freesurround  	 	 	
+    - kodi-audioencoder-flac 	 	 	
+    - kodi-audioencoder-lame 	 	 	
+    - kodi-audioencoder-vorbis 	 	 	
+    - kodi-audioencoder-wav 	 	 	
+    - kodi-game-libretro  	 		
+#   - kodi-game-libretro-2048  	 	
+    - kodi-game-libretro-fbalpha 	 		
+    - kodi-game-libretro-fbalpha2012 	 		
+    - kodi-game-libretro-fuse 	 		
+    - kodi-game-libretro-gambatte  	 		
+    - kodi-game-libretro-prboom 	 		
+    - kodi-game-libretro-stella 	 		
+    - kodi-game-libretro-tgbdual  	 		
+    - kodi-game-libretro-vba-next  	 		
+#   - kodi-game-libretro-vecx  	 	
+    - kodi-game-libretro-virtualjaguar  	 		
+    - kodi-game-libretro-yabause 	 		
+#   - kodi-imagedecoder-heif  	 	
+    - kodi-imagedecoder-mpo 	 	 	
+    - kodi-imagedecoder-raw  	 	 	
+    - kodi-inputstream-adaptive  	 	 	
+#   - kodi-inputstream-mpd 	 	 	
+#   - kodi-inputstream-rtmp  	 	 	
+#   - kodi-inputstream-smoothstream 	 	 	
+#   - kodi-peripheral-joystick 	 	 	
+    - kodi-pvr-argustv	 	 	
+    - kodi-pvr-demo 	 	 	
+    - kodi-pvr-dvblink  	 		
+    - kodi-pvr-dvbviewer 	 	 	
+    - kodi-pvr-filmon 	 	 	
+    - kodi-pvr-hdhomerun  	 	
+    - kodi-pvr-hts  	 	 	
+    - kodi-pvr-iptvsimple 	 	 	
+    - kodi-pvr-mediaportal-tvserver 	 	 	
+    - kodi-pvr-mythtv 	 		
+    - kodi-pvr-nextpvr 	 		
+    - kodi-pvr-njoy 	 	 	
+    - kodi-pvr-octonet 	 	 	
+    - kodi-pvr-pctv 	 	 	
+    - kodi-pvr-sledovanitv-cz  	 	
+    - kodi-pvr-stalker 	 	 	
+    - kodi-pvr-teleboy 	 	 	
+    - kodi-pvr-vbox 	 	 	
+    - kodi-pvr-vdr-vnsi 	 	 	
+#   - kodi-pvr-vuplus  	 	
+#   - kodi-pvr-waipu  	 	
+    - kodi-pvr-wmc 	 	 	
+    - kodi-pvr-zattoo 	 	 	
+    - kodi-screensaver-asteroids  
+    - kodi-screensaver-biogenesis 	 	
+    - kodi-screensaver-greynetic 	 	
+    - kodi-screensaver-matrixtrails 	 	
+    - kodi-screensaver-pingpong 	 	
+    - kodi-screensaver-pyro 	 	
+    - kodi-screensaver-stars 	 	
+    - kodi-vfs-libarchive 	 	
+    - kodi-vfs-nfs  	 	
+    - kodi-vfs-rar  	 	
+    - kodi-vfs-sacd 	 	
+    - kodi-vfs-sftp 	 	
+    - kodi-visualization-goom 	 	
+    - kodi-visualization-projectm  	 	
+    - kodi-visualization-shadertoy 	 	
+    - kodi-visualization-spectrum 	 	
+    - kodi-visualization-waveform  	 	 	 	
+    - xbmc-visualization-fishbmc  
+  dist: xenial
+  sources: 
+    - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
+  ppas:
+    - team-xbmc/ppa
+    - linux-schools/samba-latest
+script:
+  - cat > AppRun <<\EOF
+  - #!/bin/bash
+  - HERE=$(dirname $(readlink -f "${0}"))
+  - export UNION_PRELOAD="${HERE}"
+  - export LD_PRELOAD="${HERE}/libunionpreload.so"
+  - export PATH="$HERE/usr/sbin:$HERE/usr/bin:$HERE/sbin:$HERE/bin:$PATH"
+  - export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HERE/lib:$HERE/usr/lib:$HERE/lib/x86_64-linux-gnu:$HERE/usr/lib/x86_64-linux-gnu"
+  - export LD_LIBRARY_PATH="$HERE/usr/lib/x86_64-linux-gnu/mesa:$HERE/usr/lib/x86_64-linux-gnu/mesa-egl:$LD_LIBRARY_PATH"
+  - export LD_LIBRARY_PATH="$HERE/lib/x86_64-linux-gnu:$HERE/usr/lib:$HERE/usr/lib/x86_64-linux-gnu:$HERE/usr/lib/x86_64-linux-gnu/mesa:$HERE/usr/lib/x86_64-linux-gnu/mesa-egl:$HERE/usr/lib/x86_64-linux-gnu/pulseaudio:$HERE/usr/lib/x86_64-linux-gnu/samba:$LD_LIBRARY_PATH
+  - export export LD_LIBRARY_PATH="$HERE/usr/local/samba/bin/:/usr/local/samba/sbin/:$LD_LIBRARY_PATH
+  - export LD_LIBRARY_PATH=$HERE_LIBRARY_PATH:$LD_LIBRARY_PATH
+  - export KODI_HOME="${HERE}"/usr/share/kodi/
+  - export PYTHONPATH="${HERE}"/usr/share/pyshared/:"${PYTHONPATH}"
+  - export PYTHONHOME="${HERE}"/usr/
+  - "${HERE}"/usr/bin/kodi$@
+  - EOF
+  - chmod a+x AppRun
