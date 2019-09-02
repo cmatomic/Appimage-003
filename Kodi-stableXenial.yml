@@ -9,7 +9,7 @@ ingredients:
     - samba
     - libpcrecpp0v5 	 		
 #   - kodi-audiodecoder-2sf 	 	
-    - kodi-audiodecoder-asap 	 	 	
+#    - kodi-audiodecoder-asap 	 	 	
     - kodi-audiodecoder-dumb 	 	 	
     - kodi-audiodecoder-fluidsynth 	 	 	
     - kodi-audiodecoder-gme 	 	 	
@@ -28,7 +28,7 @@ ingredients:
     - kodi-audiodecoder-upse 	 	 	
     - kodi-audiodecoder-vgmstream 	 	 	
     - kodi-audiodecoder-wsr 	 	 	
-    - kodi-audiodsp-freesurround  	 	 	
+  # - kodi-audiodsp-freesurround  	 	 	
     - kodi-audioencoder-flac 	 	 	
     - kodi-audioencoder-lame 	 	 	
     - kodi-audioencoder-vorbis 	 	 	
@@ -61,7 +61,7 @@ ingredients:
     - kodi-pvr-filmon 	 	 	
     - kodi-pvr-hdhomerun  	 	
     - kodi-pvr-hts  	 	 	
-    - kodi-pvr-iptvsimple 	 	 	
+ #  - kodi-pvr-iptvsimple 	 	 	
     - kodi-pvr-mediaportal-tvserver 	 	 	
     - kodi-pvr-mythtv 	 		
     - kodi-pvr-nextpvr 	 		
