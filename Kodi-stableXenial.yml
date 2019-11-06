@@ -74,7 +74,7 @@ ingredients:
     - kodi-pvr-vbox 	 	 	
     - kodi-pvr-vdr-vnsi 	 	 	
     - kodi-pvr-vuplus  	 	
-    - kodi-pvr-waipu  	 	
+#   - kodi-pvr-waipu  	 	
     - kodi-pvr-wmc 	 	 	
     - kodi-pvr-zattoo 	 	 	
     - kodi-screensaver-asteroids  
