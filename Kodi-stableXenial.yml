@@ -8,8 +8,8 @@ ingredients:
     - samba-libs
     - samba
     - libpcrecpp0v5 	 		
-#   - kodi-audiodecoder-2sf 	 	
-     - kodi-audiodecoder-asap 	 	 	
+    - kodi-audiodecoder-2sf 	 	
+    - kodi-audiodecoder-asap 	 	 	
     - kodi-audiodecoder-dumb 	 	 	
     - kodi-audiodecoder-fluidsynth 	 	 	
     - kodi-audiodecoder-gme 	 	 	
@@ -35,25 +35,25 @@ ingredients:
     - kodi-audioencoder-wav 	 	 	
     - kodi-game-libretro  	 		
 #   - kodi-game-libretro-2048  	 	
-    - kodi-game-libretro-fbalpha 	 		
-    - kodi-game-libretro-fbalpha2012 	 		
-    - kodi-game-libretro-fuse 	 		
-    - kodi-game-libretro-gambatte  	 		
-    - kodi-game-libretro-prboom 	 		
-    - kodi-game-libretro-stella 	 		
-    - kodi-game-libretro-tgbdual  	 		
-    - kodi-game-libretro-vba-next  	 		
+#   - kodi-game-libretro-fbalpha 	 		
+#   - kodi-game-libretro-fbalpha2012 	 		
+#   - kodi-game-libretro-fuse 	 		
+#   - kodi-game-libretro-gambatte  	 		
+#   - kodi-game-libretro-prboom 	 		
+#   - kodi-game-libretro-stella 	 		
+#   - kodi-game-libretro-tgbdual  	 		
+#   - kodi-game-libretro-vba-next  	 		
 #   - kodi-game-libretro-vecx  	 	
-    - kodi-game-libretro-virtualjaguar  	 		
-    - kodi-game-libretro-yabause 	 		
+#   - kodi-game-libretro-virtualjaguar  	 		
+#   - kodi-game-libretro-yabause 	 		
 #   - kodi-imagedecoder-heif  	 	
     - kodi-imagedecoder-mpo 	 	 	
     - kodi-imagedecoder-raw  	 	 	
     - kodi-inputstream-adaptive  	 	 	
-#   - kodi-inputstream-mpd 	 	 	
-#   - kodi-inputstream-rtmp  	 	 	
-#   - kodi-inputstream-smoothstream 	 	 	
-#   - kodi-peripheral-joystick 	 	 	
+    - kodi-inputstream-mpd 	 	 	
+    - kodi-inputstream-rtmp  	 	 	
+    - kodi-inputstream-smoothstream 	 	 	
+    - kodi-peripheral-joystick 	 	 	
     - kodi-pvr-argustv	 	 	
     - kodi-pvr-demo 	 	 	
     - kodi-pvr-dvblink  	 		
@@ -73,8 +73,8 @@ ingredients:
     - kodi-pvr-teleboy 	 	 	
     - kodi-pvr-vbox 	 	 	
     - kodi-pvr-vdr-vnsi 	 	 	
-#   - kodi-pvr-vuplus  	 	
-#   - kodi-pvr-waipu  	 	
+    - kodi-pvr-vuplus  	 	
+    - kodi-pvr-waipu  	 	
     - kodi-pvr-wmc 	 	 	
     - kodi-pvr-zattoo 	 	 	
     - kodi-screensaver-asteroids  
