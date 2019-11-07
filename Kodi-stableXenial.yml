@@ -50,9 +50,9 @@ ingredients:
     - kodi-imagedecoder-mpo 	 	 	
     - kodi-imagedecoder-raw  	 	 	
     - kodi-inputstream-adaptive  	 	 	
-    - kodi-inputstream-mpd 	 	 	
-    - kodi-inputstream-rtmp  	 	 	
-    - kodi-inputstream-smoothstream 	 	 	
+ #  - kodi-inputstream-mpd 	 	 	
+ #  - kodi-inputstream-rtmp  	 	 	
+ #  - kodi-inputstream-smoothstream 	 	 	
     - kodi-peripheral-joystick 	 	 	
     - kodi-pvr-argustv	 	 	
     - kodi-pvr-demo 	 	 	
@@ -90,7 +90,7 @@ ingredients:
     - kodi-vfs-sacd 	 	
     - kodi-vfs-sftp 	 	
     - kodi-visualization-goom 	 	
-    - kodi-visualization-projectm  	 	
+  # - kodi-visualization-projectm  	 	
     - kodi-visualization-shadertoy 	 	
     - kodi-visualization-spectrum 	 	
     - kodi-visualization-waveform  	 	 	 	
